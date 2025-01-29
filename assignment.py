@@ -45,7 +45,7 @@ def arithmetic_ops(a, b):
         'sum': a+b,
         'difference': a-b,
         'product':  a*b,
-        'quotient': a/b
+        'quotient': a/b if b != 0 else None
     }
     return arithmetic_results
 
